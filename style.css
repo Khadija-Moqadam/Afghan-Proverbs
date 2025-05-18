@@ -1,0 +1,181 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F5F5DC;
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 60px;
+}
+
+/* Header */
+header {
+  background-color: #8B4513;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: #F5F5DC;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Intro section */
+.intro {
+  text-align: center;
+  padding: 30px;
+}
+
+.intro input {
+  padding: 8px;
+  width: 60%;
+  max-width: 300px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Featured proverbs / Gallery Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff8e1;
+  padding: 20px;
+  border: 1px solid #DAA520;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  font-family: 'Noto Serif', serif;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.card .meaning {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.card:hover .meaning {
+  opacity: 1;
+}
+
+/* Detail Page */
+.detail {
+  padding: 30px;
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.1rem;
+}
+
+.original {
+  font-family: 'Noto Serif', serif;
+  font-size: 1.3rem;
+  color: #8B4513;
+}
+
+.translation {
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.explanation {
+  margin-top: 20px;
+}
+
+/* Form section (wall.html) */
+.form-section {
+  padding: 30px;
+  max-width: 600px;
+  margin: auto;
+  background-color: #fffaf0;
+  border: 1px solid #DAA520;
+  border-radius: 10px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+form button {
+  background-color: #DAA520;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #b38600;
+}
+
+/* Button links */
+.button {
+  display: inline-block;
+  background-color: #8B4513;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 20px auto;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #a0522d;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #8B4513;
+  color: white;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
